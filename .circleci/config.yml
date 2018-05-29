@@ -36,8 +36,8 @@ jobs:
             fi
 
       - run:
-        name: notify-deploy
-        command: ./notify_deploy.sh
+          name: notify-deploy
+          command: ./notify_deploy.sh
 
       - save_cache:
           key: dependency-cache-{{ checksum "package.json" }}
